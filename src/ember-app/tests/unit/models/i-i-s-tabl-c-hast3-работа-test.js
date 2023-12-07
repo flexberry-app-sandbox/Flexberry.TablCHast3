@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-tabl-c-hast3-город', 'Unit | Model | i-i-s-tabl-c-hast3-город', {
+moduleForModel('i-i-s-tabl-c-hast3-работа', 'Unit | Model | i-i-s-tabl-c-hast3-работа', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-tabl-c-hast3-город',

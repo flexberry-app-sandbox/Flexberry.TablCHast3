@@ -120,6 +120,9 @@
     <Compile Include="Улица.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Работа.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

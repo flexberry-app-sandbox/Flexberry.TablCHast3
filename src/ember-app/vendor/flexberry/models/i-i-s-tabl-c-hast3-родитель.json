@@ -29,6 +29,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "работа",
+      "relatedTo": "i-i-s-tabl-c-hast3-работа",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "ученик",
       "relatedTo": "i-i-s-tabl-c-hast3-ученик",
       "inverse": "родитель"
@@ -53,7 +60,29 @@
           "index": 1
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Работа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "назв",
+              "caption": "Название",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "Работа",
+          "name": "работа",
+          "relatedTo": "i-i-s-tabl-c-hast3-работа",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

@@ -11,6 +11,11 @@ Router.map(function () {
   { path: 'i-i-s-tabl-c-hast3-препод-e/:id' });
   this.route('i-i-s-tabl-c-hast3-препод-e.new',
   { path: 'i-i-s-tabl-c-hast3-препод-e/new' });
+  this.route('i-i-s-tabl-c-hast3-работа-l');
+  this.route('i-i-s-tabl-c-hast3-работа-e',
+  { path: 'i-i-s-tabl-c-hast3-работа-e/:id' });
+  this.route('i-i-s-tabl-c-hast3-работа-e.new',
+  { path: 'i-i-s-tabl-c-hast3-работа-e/new' });
   this.route('i-i-s-tabl-c-hast3-улица-l');
   this.route('i-i-s-tabl-c-hast3-улица-e',
   { path: 'i-i-s-tabl-c-hast3-улица-e/:id' });

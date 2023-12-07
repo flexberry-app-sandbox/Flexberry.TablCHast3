@@ -30,13 +30,17 @@ namespace IIS.TablCHast3
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("РодительE", new string[] {
             "ФИО as \'ФИО\'",
-            "Возвраст as \'Возвраст\'"})]
+            "Возвраст as \'Возвраст\'",
+            "Работа as \'Работа\'",
+            "Работа.Назв as \'Название\'"})]
     public class Родитель : ICSSoft.STORMNET.DataObject
     {
         
         private string fФИО;
         
         private int fВозвраст;
+        
+        private IIS.TablCHast3.Работа fРабота;
         
         private IIS.TablCHast3.Ученик fУченик;
         
@@ -105,6 +109,40 @@ namespace IIS.TablCHast3
                 // *** Start programmer edit section *** (Родитель.ФИО Set end)
 
                 // *** End programmer edit section *** (Родитель.ФИО Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Родитель.
+        /// </summary>
+        // *** Start programmer edit section *** (Родитель.Работа CustomAttributes)
+
+        // *** End programmer edit section *** (Родитель.Работа CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Работа"})]
+        [NotNull()]
+        public virtual IIS.TablCHast3.Работа Работа
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Родитель.Работа Get start)
+
+                // *** End programmer edit section *** (Родитель.Работа Get start)
+                IIS.TablCHast3.Работа result = this.fРабота;
+                // *** Start programmer edit section *** (Родитель.Работа Get end)
+
+                // *** End programmer edit section *** (Родитель.Работа Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Родитель.Работа Set start)
+
+                // *** End programmer edit section *** (Родитель.Работа Set start)
+                this.fРабота = value;
+                // *** Start programmer edit section *** (Родитель.Работа Set end)
+
+                // *** End programmer edit section *** (Родитель.Работа Set end)
             }
         }
         

@@ -15,6 +15,15 @@ CREATE TABLE [Город] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [Работа] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Назв] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Родитель] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -22,6 +31,8 @@ CREATE TABLE [Родитель] (
 	 [Возвраст] INT  NULL,
 
 	 [ФИО] VARCHAR(255)  NULL,
+
+	 [Работа] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [Ученик] UNIQUEIDENTIFIER  NOT NULL,
 
