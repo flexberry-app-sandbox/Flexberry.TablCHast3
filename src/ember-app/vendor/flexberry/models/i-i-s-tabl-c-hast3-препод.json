@@ -59,7 +59,15 @@
         }
       ],
       "belongsTo": [],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "ГородE",
+          "caption": "",
+          "name": "город",
+          "relatedTo": "i-i-s-tabl-c-hast3-город",
+          "inverse": null
+        }
+      ]
     }
   ],
   "stored": true,
