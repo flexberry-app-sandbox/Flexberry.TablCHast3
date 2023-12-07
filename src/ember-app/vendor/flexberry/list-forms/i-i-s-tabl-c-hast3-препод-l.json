@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabl-c-hast3-препод-e",
+  "editForm": "i-i-s-tabl-c-hast3-препод-e",
+  "external": false,
+  "caption": "Препод",
+  "name": "IISTablCHast3ПреподL",
+  "className": "ПреподL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-c-hast3-препод",
+      "modelProjection": "ПреподL"
+    }
+  ]
+}

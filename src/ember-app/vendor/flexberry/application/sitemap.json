@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Tabl c hast3",
+  "applicationTitle": "Tabl c hast3",
+  "items": [
+    {
+      "link": null,
+      "menuName": "tabl-c-hast3",
+      "caption": "TablCHast3",
+      "title": "TablCHast3",
+      "children": [
+        {
+          "link": "i-i-s-tabl-c-hast3-препод-l",
+          "menuName": null,
+          "caption": "Препод",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-tabl-c-hast3-ученик-l",
+          "menuName": null,
+          "caption": "Ученик",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Препод",
+      "projection": "ПреподL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Ученик",
+  "name": "IISTablCHast3УченикE",
+  "className": "УченикE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-c-hast3-ученик",
+      "modelProjection": "УченикE"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISTablCHast3Ученик",
+  "modelName": "i-i-s-tabl-c-hast3-ученик",
+  "className": "Ученик",
+  "nameSpace": "IIS.TablCHast3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "препод",
+      "relatedTo": "i-i-s-tabl-c-hast3-препод",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "родитель",
+      "relatedTo": "i-i-s-tabl-c-hast3-родитель",
+      "inverse": "ученик"
+    }
+  ],
+  "projections": [
+    {
+      "name": "УченикE",
+      "modelName": "i-i-s-tabl-c-hast3-ученик",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Препод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Препод",
+          "name": "препод",
+          "relatedTo": "i-i-s-tabl-c-hast3-препод",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "РодительE",
+          "caption": "Родитель",
+          "name": "родитель",
+          "relatedTo": "i-i-s-tabl-c-hast3-родитель",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "УченикL",
+      "modelName": "i-i-s-tabl-c-hast3-ученик",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Препод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "препод",
+          "relatedTo": "i-i-s-tabl-c-hast3-препод",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
