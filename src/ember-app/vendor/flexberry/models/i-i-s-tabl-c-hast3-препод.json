@@ -61,7 +61,7 @@
       "belongsTo": [],
       "hasMany": [
         {
-          "projectionName": "ГородE",
+          "projectionName": "ГородL",
           "caption": "",
           "name": "город",
           "relatedTo": "i-i-s-tabl-c-hast3-город",

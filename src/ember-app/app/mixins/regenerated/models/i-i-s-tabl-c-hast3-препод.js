@@ -39,10 +39,9 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ПреподL', 'i-i-s-tabl-c-hast3-препод', {
     фИО: attr('ФИО', { index: 0 }),
     город: hasMany('i-i-s-tabl-c-hast3-город', '', {
-      назв: attr('Название', { index: 0 }),
       улица: belongsTo('i-i-s-tabl-c-hast3-улица', 'Улица', {
-        назв: attr('Улица', { index: 2 })
-      }, { index: 1 })
+        назв: attr('Улица', { index: 0 })
+      }, { index: -1, hidden: true })
     })
   });
 };

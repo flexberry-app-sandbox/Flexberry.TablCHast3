@@ -10,6 +10,14 @@ export default {
           __caption__: 'Улица'
         }
       }
+    },
+    ГородL: {
+      улица: {
+        __caption__: 'Улица',
+        назв: {
+          __caption__: 'Улица'
+        }
+      }
     }
   },
   validations: {

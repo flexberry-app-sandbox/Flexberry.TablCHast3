@@ -40,4 +40,10 @@ export let defineProjections = function (modelClass) {
       назв: attr('Улица', { index: 2 })
     }, { index: 1 })
   });
+
+  modelClass.defineProjection('ГородL', 'i-i-s-tabl-c-hast3-город', {
+    улица: belongsTo('i-i-s-tabl-c-hast3-улица', 'Улица', {
+      назв: attr('Улица', { index: 0 })
+    }, { index: -1, hidden: true })
+  });
 };

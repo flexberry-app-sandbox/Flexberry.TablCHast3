@@ -69,6 +69,35 @@
         }
       ],
       "hasMany": []
+    },
+    {
+      "name": "ГородL",
+      "modelName": "i-i-s-tabl-c-hast3-город",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Улица",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "назв",
+              "caption": "Улица",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Улица",
+          "name": "улица",
+          "relatedTo": "i-i-s-tabl-c-hast3-улица",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
     }
   ],
   "stored": true,
