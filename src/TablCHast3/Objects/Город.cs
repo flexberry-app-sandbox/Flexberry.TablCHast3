@@ -29,11 +29,14 @@ namespace IIS.TablCHast3
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ГородE", new string[] {
-            "Назв as \'Название\'"})]
+            "Назв as \'Название\'",
+            "Улица.Назв as \'Улица\'"})]
     public class Город : ICSSoft.STORMNET.DataObject
     {
         
         private string fНазв;
+        
+        private IIS.TablCHast3.Улица fУлица;
         
         private IIS.TablCHast3.Препод fПрепод;
         
@@ -71,6 +74,40 @@ namespace IIS.TablCHast3
                 // *** Start programmer edit section *** (Город.Назв Set end)
 
                 // *** End programmer edit section *** (Город.Назв Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Город.
+        /// </summary>
+        // *** Start programmer edit section *** (Город.Улица CustomAttributes)
+
+        // *** End programmer edit section *** (Город.Улица CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Улица"})]
+        [NotNull()]
+        public virtual IIS.TablCHast3.Улица Улица
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Город.Улица Get start)
+
+                // *** End programmer edit section *** (Город.Улица Get start)
+                IIS.TablCHast3.Улица result = this.fУлица;
+                // *** Start programmer edit section *** (Город.Улица Get end)
+
+                // *** End programmer edit section *** (Город.Улица Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Город.Улица Set start)
+
+                // *** End programmer edit section *** (Город.Улица Set start)
+                this.fУлица = value;
+                // *** Start programmer edit section *** (Город.Улица Set end)
+
+                // *** End programmer edit section *** (Город.Улица Set end)
             }
         }
         

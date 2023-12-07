@@ -117,6 +117,9 @@
     <Compile Include="Город.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Улица.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

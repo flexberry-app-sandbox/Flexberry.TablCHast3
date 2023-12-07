@@ -6,6 +6,7 @@
 CREATE TABLE Город (
  primaryKey UUID NOT NULL,
  Назв VARCHAR(255) NULL,
+ Улица UUID NOT NULL,
  Препод UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
@@ -28,6 +29,12 @@ CREATE TABLE Ученик (
  primaryKey UUID NOT NULL,
  ФИО VARCHAR(255) NULL,
  Препод UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Улица (
+ primaryKey UUID NOT NULL,
+ Назв VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -134,6 +141,9 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE Город ADD CONSTRAINT FKd28ab8fec0b6c606ffa67df6fb43e3715310ee2a FOREIGN KEY (Улица) REFERENCES Улица; 
+CREATE INDEX Indexd28ab8fec0b6c606ffa67df6fb43e3715310ee2a on Город (Улица); 
 
  ALTER TABLE Город ADD CONSTRAINT FKb5100006d1f637be51284b117ffb0f75375e61a4 FOREIGN KEY (Препод) REFERENCES Препод; 
 CREATE INDEX Indexb5100006d1f637be51284b117ffb0f75375e61a4 on Город (Препод); 

@@ -8,6 +8,8 @@ CREATE TABLE [Город] (
 
 	 [Назв] VARCHAR(255)  NULL,
 
+	 [Улица] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [Препод] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
@@ -42,6 +44,15 @@ CREATE TABLE [Ученик] (
 	 [ФИО] VARCHAR(255)  NULL,
 
 	 [Препод] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [Улица] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Назв] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

@@ -12,6 +12,7 @@ moduleForModel('i-i-s-tabl-c-hast3-город', 'Unit | Serializer | i-i-s-tabl-
     'model:i-i-s-tabl-c-hast3-город',
     'model:i-i-s-tabl-c-hast3-препод',
     'model:i-i-s-tabl-c-hast3-родитель',
+    'model:i-i-s-tabl-c-hast3-улица',
     'model:i-i-s-tabl-c-hast3-ученик',
     'validator:ds-error',
     'validator:presence',

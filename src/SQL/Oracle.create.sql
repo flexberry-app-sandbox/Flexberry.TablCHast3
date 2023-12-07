@@ -9,6 +9,8 @@ CREATE TABLE "Город"
 
 	"Назв" NVARCHAR2(255) NULL,
 
+	"Улица" RAW(16) NOT NULL,
+
 	"Препод" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
@@ -49,6 +51,17 @@ CREATE TABLE "Ученик"
 	"ФИО" NVARCHAR2(255) NULL,
 
 	"Препод" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "Улица"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Назв" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -251,6 +264,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "Город"
+	ADD CONSTRAINT "Город_FУлица_0" FOREIGN KEY ("Улица") REFERENCES "Улица" ("primaryKey");
+
+CREATE INDEX "Город_IУлица" on "Город" ("Улица");
 
 ALTER TABLE "Город"
 	ADD CONSTRAINT "Город_FПрепод_0" FOREIGN KEY ("Препод") REFERENCES "Препод" ("primaryKey");

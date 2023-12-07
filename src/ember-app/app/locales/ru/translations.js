@@ -8,6 +8,7 @@ import IISTablCHast3УченикEForm from './forms/i-i-s-tabl-c-hast3-учен�
 import IISTablCHast3ГородModel from './models/i-i-s-tabl-c-hast3-город';
 import IISTablCHast3ПреподModel from './models/i-i-s-tabl-c-hast3-препод';
 import IISTablCHast3РодительModel from './models/i-i-s-tabl-c-hast3-родитель';
+import IISTablCHast3УлицаModel from './models/i-i-s-tabl-c-hast3-улица';
 import IISTablCHast3УченикModel from './models/i-i-s-tabl-c-hast3-ученик';
 
 const translations = {};
@@ -18,6 +19,7 @@ $.extend(true, translations, {
     'i-i-s-tabl-c-hast3-город': IISTablCHast3ГородModel,
     'i-i-s-tabl-c-hast3-препод': IISTablCHast3ПреподModel,
     'i-i-s-tabl-c-hast3-родитель': IISTablCHast3РодительModel,
+    'i-i-s-tabl-c-hast3-улица': IISTablCHast3УлицаModel,
     'i-i-s-tabl-c-hast3-ученик': IISTablCHast3УченикModel
   },
 
