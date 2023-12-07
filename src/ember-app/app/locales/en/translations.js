@@ -98,6 +98,10 @@ $.extend(true, translations, {
           'i-i-s-tabl-c-hast3-ученик-l': {
             caption: 'Ученик',
             title: ''
+          },
+          'i-i-s-tabl-c-hast3-улица-l': {
+            caption: 'Улица',
+            title: ''
           }
         }
       }
