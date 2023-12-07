@@ -34,8 +34,6 @@ namespace IIS.TablCHast3
             ""})]
     [View("ПреподL", new string[] {
             "ФИО as \'ФИО\'"})]
-    [AssociatedDetailViewAttribute("ПреподL", "Город", "ГородL", true, "", "", true, new string[] {
-            ""})]
     public class Препод : ICSSoft.STORMNET.DataObject
     {
         

@@ -32,8 +32,6 @@ namespace IIS.TablCHast3
             "Назв as \'Название\'",
             "Улица as \'Улица\'",
             "Улица.Назв as \'Улица\'"})]
-    [View("ГородL", new string[] {
-            "Улица.Назв as \'Улица\'"})]
     public class Город : ICSSoft.STORMNET.DataObject
     {
         
@@ -163,17 +161,6 @@ namespace IIS.TablCHast3
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("ГородE", typeof(IIS.TablCHast3.Город));
-                }
-            }
-            
-            /// <summary>
-            /// "ГородL" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View ГородL
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("ГородL", typeof(IIS.TablCHast3.Город));
                 }
             }
         }
