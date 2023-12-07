@@ -5,7 +5,8 @@ import { validator } from 'ember-cp-validations';
 import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
-  фИО: DS.attr('string')
+  фИО: DS.attr('string'),
+  город: DS.hasMany('i-i-s-tabl-c-hast3-город', { inverse: 'препод', async: false })
 });
 
 export let ValidationRules = {
@@ -15,11 +16,21 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
+  город: {
+    descriptionKey: 'models.i-i-s-tabl-c-hast3-препод.validations.город.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ПреподE', 'i-i-s-tabl-c-hast3-препод', {
-    фИО: attr('ФИО', { index: 0 })
+    фИО: attr('ФИО', { index: 0 }),
+    город: hasMany('i-i-s-tabl-c-hast3-город', 'Город', {
+      назв: attr('Название', { index: 0 })
+    })
   });
 
   modelClass.defineProjection('ПреподL', 'i-i-s-tabl-c-hast3-препод', {

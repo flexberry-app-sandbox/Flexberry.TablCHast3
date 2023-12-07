@@ -2,6 +2,19 @@
 
 
 
+CREATE TABLE "Город"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Назв" NVARCHAR2(255) NULL,
+
+	"Препод" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Родитель"
 (
 
@@ -238,6 +251,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "Город"
+	ADD CONSTRAINT "Город_FПрепод_0" FOREIGN KEY ("Препод") REFERENCES "Препод" ("primaryKey");
+
+CREATE INDEX "Город_IПрепод" on "Город" ("Препод");
 
 ALTER TABLE "Родитель"
 	ADD CONSTRAINT "Родитель_FУче_3253" FOREIGN KEY ("Ученик") REFERENCES "Ученик" ("primaryKey");

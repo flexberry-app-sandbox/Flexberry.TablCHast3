@@ -17,7 +17,13 @@
     }
   ],
   "belongsTo": [],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "город",
+      "relatedTo": "i-i-s-tabl-c-hast3-город",
+      "inverse": "препод"
+    }
+  ],
   "projections": [
     {
       "name": "ПреподE",
@@ -31,7 +37,15 @@
         }
       ],
       "belongsTo": [],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "ГородE",
+          "caption": "Город",
+          "name": "город",
+          "relatedTo": "i-i-s-tabl-c-hast3-город",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "ПреподL",

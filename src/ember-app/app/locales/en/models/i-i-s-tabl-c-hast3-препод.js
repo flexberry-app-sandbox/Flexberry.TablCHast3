@@ -3,6 +3,12 @@ export default {
     ПреподE: {
       фИО: {
         __caption__: 'ФИО'
+      },
+      город: {
+        __caption__: 'Город',
+        назв: {
+          __caption__: 'Название'
+        }
       }
     },
     ПреподL: {
@@ -14,6 +20,9 @@ export default {
   validations: {
     фИО: {
       __caption__: 'ФИО'
+    },
+    город: {
+      __caption__: 'Город'
     }
   }
 };

@@ -1,9 +1,9 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-tabl-c-hast3-ученик', 'Unit | Serializer | i-i-s-tabl-c-hast3-ученик', {
+moduleForModel('i-i-s-tabl-c-hast3-город', 'Unit | Serializer | i-i-s-tabl-c-hast3-город', {
   // Specify the other units that are required for this test.
   needs: [
-    'serializer:i-i-s-tabl-c-hast3-ученик',
+    'serializer:i-i-s-tabl-c-hast3-город',
     'service:syncer',
     'transform:file',
     'transform:decimal',

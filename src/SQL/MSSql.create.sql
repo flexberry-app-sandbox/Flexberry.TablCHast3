@@ -2,6 +2,17 @@
 
 
 
+CREATE TABLE [Город] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Назв] VARCHAR(255)  NULL,
+
+	 [Препод] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Родитель] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

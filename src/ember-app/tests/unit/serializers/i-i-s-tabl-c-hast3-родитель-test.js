@@ -9,6 +9,7 @@ moduleForModel('i-i-s-tabl-c-hast3-родитель', 'Unit | Serializer | i-i-s
     'transform:decimal',
     'transform:guid',
 
+    'model:i-i-s-tabl-c-hast3-город',
     'model:i-i-s-tabl-c-hast3-препод',
     'model:i-i-s-tabl-c-hast3-родитель',
     'model:i-i-s-tabl-c-hast3-ученик',

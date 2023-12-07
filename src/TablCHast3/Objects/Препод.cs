@@ -30,12 +30,16 @@ namespace IIS.TablCHast3
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ПреподE", new string[] {
             "ФИО as \'ФИО\'"})]
+    [AssociatedDetailViewAttribute("ПреподE", "Город", "ГородE", true, "", "Город", true, new string[] {
+            ""})]
     [View("ПреподL", new string[] {
             "ФИО as \'ФИО\'"})]
     public class Препод : ICSSoft.STORMNET.DataObject
     {
         
         private string fФИО;
+        
+        private IIS.TablCHast3.DetailArrayOfГород fГород;
         
         // *** Start programmer edit section *** (Препод CustomMembers)
 
@@ -71,6 +75,41 @@ namespace IIS.TablCHast3
                 // *** Start programmer edit section *** (Препод.ФИО Set end)
 
                 // *** End programmer edit section *** (Препод.ФИО Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Препод.
+        /// </summary>
+        // *** Start programmer edit section *** (Препод.Город CustomAttributes)
+
+        // *** End programmer edit section *** (Препод.Город CustomAttributes)
+        public virtual IIS.TablCHast3.DetailArrayOfГород Город
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Препод.Город Get start)
+
+                // *** End programmer edit section *** (Препод.Город Get start)
+                if ((this.fГород == null))
+                {
+                    this.fГород = new IIS.TablCHast3.DetailArrayOfГород(this);
+                }
+                IIS.TablCHast3.DetailArrayOfГород result = this.fГород;
+                // *** Start programmer edit section *** (Препод.Город Get end)
+
+                // *** End programmer edit section *** (Препод.Город Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Препод.Город Set start)
+
+                // *** End programmer edit section *** (Препод.Город Set start)
+                this.fГород = value;
+                // *** Start programmer edit section *** (Препод.Город Set end)
+
+                // *** End programmer edit section *** (Препод.Город Set end)
             }
         }
         

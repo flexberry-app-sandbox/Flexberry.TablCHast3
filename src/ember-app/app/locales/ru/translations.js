@@ -5,6 +5,7 @@ import IISTablCHast3ПреподLForm from './forms/i-i-s-tabl-c-hast3-преп�
 import IISTablCHast3УченикLForm from './forms/i-i-s-tabl-c-hast3-ученик-l';
 import IISTablCHast3ПреподEForm from './forms/i-i-s-tabl-c-hast3-препод-e';
 import IISTablCHast3УченикEForm from './forms/i-i-s-tabl-c-hast3-ученик-e';
+import IISTablCHast3ГородModel from './models/i-i-s-tabl-c-hast3-город';
 import IISTablCHast3ПреподModel from './models/i-i-s-tabl-c-hast3-препод';
 import IISTablCHast3РодительModel from './models/i-i-s-tabl-c-hast3-родитель';
 import IISTablCHast3УченикModel from './models/i-i-s-tabl-c-hast3-ученик';
@@ -14,6 +15,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-tabl-c-hast3-город': IISTablCHast3ГородModel,
     'i-i-s-tabl-c-hast3-препод': IISTablCHast3ПреподModel,
     'i-i-s-tabl-c-hast3-родитель': IISTablCHast3РодительModel,
     'i-i-s-tabl-c-hast3-ученик': IISTablCHast3УченикModel

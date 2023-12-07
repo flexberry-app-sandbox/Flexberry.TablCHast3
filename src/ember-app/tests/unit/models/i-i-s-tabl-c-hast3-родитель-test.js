@@ -3,6 +3,7 @@ import { moduleForModel, test } from 'ember-qunit';
 moduleForModel('i-i-s-tabl-c-hast3-родитель', 'Unit | Model | i-i-s-tabl-c-hast3-родитель', {
   // Specify the other units that are required for this test.
   needs: [
+    'model:i-i-s-tabl-c-hast3-город',
     'model:i-i-s-tabl-c-hast3-препод',
     'model:i-i-s-tabl-c-hast3-родитель',
     'model:i-i-s-tabl-c-hast3-ученик',
