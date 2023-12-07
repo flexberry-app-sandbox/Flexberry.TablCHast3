@@ -45,6 +45,12 @@
           "caption": "ФИО",
           "hidden": false,
           "index": 0
+        },
+        {
+          "name": "возвраст",
+          "caption": "Возвраст",
+          "hidden": false,
+          "index": 1
         }
       ],
       "belongsTo": [],

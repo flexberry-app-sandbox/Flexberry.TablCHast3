@@ -28,13 +28,13 @@ export default Controller.extend({
             link: 'i-i-s-tabl-c-hast3-препод-l',
             caption: i18n.t('forms.application.sitemap.tabl-c-hast3.i-i-s-tabl-c-hast3-препод-l.caption'),
             title: i18n.t('forms.application.sitemap.tabl-c-hast3.i-i-s-tabl-c-hast3-препод-l.title'),
-            icon: 'calendar',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-tabl-c-hast3-ученик-l',
             caption: i18n.t('forms.application.sitemap.tabl-c-hast3.i-i-s-tabl-c-hast3-ученик-l.caption'),
             title: i18n.t('forms.application.sitemap.tabl-c-hast3.i-i-s-tabl-c-hast3-ученик-l.title'),
-            icon: 'phone',
+            icon: 'archive',
             children: null
           }]
         }

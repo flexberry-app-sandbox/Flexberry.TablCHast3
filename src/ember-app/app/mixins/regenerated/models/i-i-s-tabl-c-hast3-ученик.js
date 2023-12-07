@@ -40,7 +40,8 @@ export let defineProjections = function (modelClass) {
       фИО: attr('ФИО', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'фИО' }),
     родитель: hasMany('i-i-s-tabl-c-hast3-родитель', 'Родитель', {
-      фИО: attr('ФИО', { index: 0 })
+      фИО: attr('ФИО', { index: 0 }),
+      возвраст: attr('Возвраст', { index: 1 })
     })
   });
 

@@ -29,7 +29,8 @@ namespace IIS.TablCHast3
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("РодительE", new string[] {
-            "ФИО as \'ФИО\'"})]
+            "ФИО as \'ФИО\'",
+            "Возвраст as \'Возвраст\'"})]
     public class Родитель : ICSSoft.STORMNET.DataObject
     {
         
