@@ -2,8 +2,10 @@ import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
 
 import IISTablCHast3ПреподLForm from './forms/i-i-s-tabl-c-hast3-препод-l';
+import IISTablCHast3УлицаLForm from './forms/i-i-s-tabl-c-hast3-улица-l';
 import IISTablCHast3УченикLForm from './forms/i-i-s-tabl-c-hast3-ученик-l';
 import IISTablCHast3ПреподEForm from './forms/i-i-s-tabl-c-hast3-препод-e';
+import IISTablCHast3УлицаEForm from './forms/i-i-s-tabl-c-hast3-улица-e';
 import IISTablCHast3УченикEForm from './forms/i-i-s-tabl-c-hast3-ученик-e';
 import IISTablCHast3ГородModel from './models/i-i-s-tabl-c-hast3-город';
 import IISTablCHast3ПреподModel from './models/i-i-s-tabl-c-hast3-препод';
@@ -110,8 +112,10 @@ $.extend(true, translations, {
       'delete-error-message-caption': 'Delete operation failed'
     },
     'i-i-s-tabl-c-hast3-препод-l': IISTablCHast3ПреподLForm,
+    'i-i-s-tabl-c-hast3-улица-l': IISTablCHast3УлицаLForm,
     'i-i-s-tabl-c-hast3-ученик-l': IISTablCHast3УченикLForm,
     'i-i-s-tabl-c-hast3-препод-e': IISTablCHast3ПреподEForm,
+    'i-i-s-tabl-c-hast3-улица-e': IISTablCHast3УлицаEForm,
     'i-i-s-tabl-c-hast3-ученик-e': IISTablCHast3УченикEForm
   },
 

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "",
+  "name": "IISTablCHast3УлицаE",
+  "className": "УлицаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-c-hast3-улица",
+      "modelProjection": "УлицаE"
+    }
+  ]
+}

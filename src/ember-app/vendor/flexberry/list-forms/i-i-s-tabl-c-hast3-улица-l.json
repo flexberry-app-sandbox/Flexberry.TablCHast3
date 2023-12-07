@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabl-c-hast3-улица-e",
+  "editForm": "i-i-s-tabl-c-hast3-улица-e",
+  "external": false,
+  "caption": "",
+  "name": "IISTablCHast3УлицаL",
+  "className": "УлицаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-c-hast3-улица",
+      "modelProjection": "УлицаL"
+    }
+  ]
+}
