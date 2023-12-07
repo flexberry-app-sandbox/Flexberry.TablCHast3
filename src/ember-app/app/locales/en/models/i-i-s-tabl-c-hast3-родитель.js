@@ -7,6 +7,9 @@ export default {
     }
   },
   validations: {
+    возвраст: {
+      __caption__: 'возвраст'
+    },
     фИО: {
       __caption__: 'ФИО'
     },

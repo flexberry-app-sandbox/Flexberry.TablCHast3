@@ -6,6 +6,7 @@
 CREATE TABLE Родитель (
  primaryKey UUID NOT NULL,
  ФИО VARCHAR(255) NULL,
+ Возвраст INT NULL,
  Ученик UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 

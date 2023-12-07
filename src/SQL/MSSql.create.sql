@@ -6,6 +6,8 @@ CREATE TABLE [Родитель] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
+	 [Возвраст] INT  NULL,
+
 	 [ФИО] VARCHAR(255)  NULL,
 
 	 [Ученик] UNIQUEIDENTIFIER  NOT NULL,

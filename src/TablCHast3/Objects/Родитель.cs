@@ -35,12 +35,45 @@ namespace IIS.TablCHast3
         
         private string fФИО;
         
+        private int fВозвраст;
+        
         private IIS.TablCHast3.Ученик fУченик;
         
         // *** Start programmer edit section *** (Родитель CustomMembers)
 
         // *** End programmer edit section *** (Родитель CustomMembers)
 
+        
+        /// <summary>
+        /// Возвраст.
+        /// </summary>
+        // *** Start programmer edit section *** (Родитель.Возвраст CustomAttributes)
+
+        // *** End programmer edit section *** (Родитель.Возвраст CustomAttributes)
+        public virtual int Возвраст
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Родитель.Возвраст Get start)
+
+                // *** End programmer edit section *** (Родитель.Возвраст Get start)
+                int result = this.fВозвраст;
+                // *** Start programmer edit section *** (Родитель.Возвраст Get end)
+
+                // *** End programmer edit section *** (Родитель.Возвраст Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Родитель.Возвраст Set start)
+
+                // *** End programmer edit section *** (Родитель.Возвраст Set start)
+                this.fВозвраст = value;
+                // *** Start programmer edit section *** (Родитель.Возвраст Set end)
+
+                // *** End programmer edit section *** (Родитель.Возвраст Set end)
+            }
+        }
         
         /// <summary>
         /// ФИО.

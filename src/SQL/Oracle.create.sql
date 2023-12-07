@@ -9,6 +9,8 @@ CREATE TABLE "Родитель"
 
 	"ФИО" NVARCHAR2(255) NULL,
 
+	"Возвраст" NUMBER(10) NULL,
+
 	"Ученик" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
