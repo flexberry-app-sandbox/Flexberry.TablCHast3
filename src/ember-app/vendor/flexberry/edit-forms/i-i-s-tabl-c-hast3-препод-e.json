@@ -1,5 +1,14 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": "улица",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "Город.Улица",
+      "projection": "УлицаL",
+      "detailModelName": "i-i-s-tabl-c-hast3-город"
+    }
+  ],
   "external": false,
   "caption": "Препод",
   "name": "IISTablCHast3ПреподE",

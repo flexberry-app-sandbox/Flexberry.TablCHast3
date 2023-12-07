@@ -30,6 +30,7 @@ namespace IIS.TablCHast3
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ГородE", new string[] {
             "Назв as \'Название\'",
+            "Улица as \'Улица\'",
             "Улица.Назв as \'Улица\'"})]
     public class Город : ICSSoft.STORMNET.DataObject
     {

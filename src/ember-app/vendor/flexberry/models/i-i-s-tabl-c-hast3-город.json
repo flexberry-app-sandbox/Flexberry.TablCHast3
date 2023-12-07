@@ -57,10 +57,10 @@
               "name": "назв",
               "caption": "Улица",
               "hidden": false,
-              "index": 1
+              "index": 2
             }
           ],
-          "index": -1,
+          "index": 1,
           "type": "default",
           "caption": "Улица",
           "name": "улица",
